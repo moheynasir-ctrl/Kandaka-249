@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="description" content="توازن — ثياب سودانية مختارة بعناية، من قلب المعادي. تسوّقي تشكيلتنا واطلبي بسهولة.">
+  <title>توازن | أناقة سودانية بروح عصرية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">من المعادي بكل محبة <span aria-hidden="true">✳</span> توصيل داخل القاهرة والجيزة</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="توازن — الرئيسية"><span class="brand-mark">ت</span><span>توازن<small>أناقة من السودان</small></span></a>
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      <a href="#collection">تسوّقي</a><a href="#story">حكايتنا</a><a href="#delivery">التوصيل والاستبدال</a>
+    </nav>
+    <button class="cart-trigger" id="open-cart" type="button" aria-label="افتحي سلة التسوق">السلة <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> من السودان، بمحبة في القاهرة</p>
+        <h1>حكاية تلبسيها.<br><em>وأصالة تحسيها.</em></h1>
+        <p class="hero-description">ثياب سودانية وجلابيات مختارة بعناية — تفاصيل من تراثنا، وأناقة تشبهك.</p>
+        <a class="button button-dark" href="#collection">اكتشفي التشكيلة <span aria-hidden="true">←</span></a>
+        <div class="hero-note"><span class="tiny-star">✳</span> اختيارات قليلة، بحب كبير.</div>
+      </div>
+      <div class="hero-art" role="img" aria-label="رسم فني لثوب سوداني باللون العنابي"><div class="art-sun"></div><img src="assets/hero-thobe.svg" alt="ثوب سوداني أنيق بتفاصيل زخرفية"><span class="art-caption">تراثنا، بطريقتك.</span><span class="art-number">01 / 03</span></div>
+      <div class="hero-side-label">TAWAZUN · CAIRO</div>
+    </section>
+
+    <section class="intro-strip" id="story"><span>هويتنا في كل تفصيلة</span><span>قماش نختاره بعناية</span><span>قطعة تحكي حكايتك</span></section>
+
+    <section class="collection section-wrap" id="collection">
+      <div class="section-heading"><div><p class="eyebrow">اختاري ما يشبهك</p><h2>تشكيلة توازن</h2></div><p>قطع مختارة لترافقك في يومك ومناسباتك.</p></div>
+      <div class="shop-tools"><div class="filter-list" role="group" aria-label="تصفية المنتجات"><button class="filter active" data-category="الكل">الكل</button><button class="filter" data-category="ثياب">الثياب</button><button class="filter" data-category="جلابيات">الجلابيات</button><button class="filter" data-category="إكسسوارات">الإكسسوارات</button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ابحثي عن قطعة..." aria-label="ابحثي عن قطعة"></label></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="sample-note">الأسعار والتشكيلة المعروضة أمثلة أولية — سنحدّثها بمنتجات المحل الفعلية قبل الإطلاق.</p>
+    </section>
+
+    <section class="story-band" id="delivery"><div class="story-stamp">من<br>المعادي<br>بحب</div><div><p class="eyebrow">أهلًا بيكِ في توازن</p><h2>الجمال في التفاصيل<br>والراحة في الاختيار.</h2><p>نختار كل قطعة بعناية، ونساعدك تعرفي المقاس المناسب قبل الطلب. تواصلي معنا لأي سؤال عن القماش أو المقاسات أو التوصيل.</p><a class="text-link" href="#collection">تصفحي القطع <span aria-hidden="true">←</span></a></div></section>
+
+    <section class="service-row"><article><span class="service-icon">01</span><h3>توصيل واضح</h3><p>موعد ورسوم التوصيل تتأكد معك قبل تثبيت الطلب.</p></article><article><span class="service-icon">02</span><h3>اختيار على راحتك</h3><p>اسألينا عن المقاس والخامة قبل ما تقرري.</p></article><article><span class="service-icon">03</span><h3>استبدال بالتنسيق</h3><p>نتفق على تفاصيل الاستبدال معك قبل تأكيد الطلب.</p></article></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="#home"><span class="brand-mark">ت</span><span>توازن<small>أناقة من السودان</small></span></a><p>قطعة من حكايتنا، ليومك.</p><span>© <span id="year"></span> توازن · المعادي، القاهرة</span></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-panel" id="cart-panel" aria-labelledby="cart-title" aria-modal="true" role="dialog" hidden>
+    <div class="panel-heading"><div><p class="eyebrow">اختياراتك</p><h2 id="cart-title">سلة التسوق</h2></div><button class="icon-button" id="close-cart" type="button" aria-label="إغلاق السلة">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span>✳</span><p>لسه ما اخترتيش حاجة.</p><button class="text-link" id="continue-shopping" type="button">اكتشفي التشكيلة ←</button></div>
+    <div class="cart-bottom" id="cart-bottom" hidden><div class="subtotal"><span>المجموع التقديري</span><strong id="cart-total"></strong></div><p>التوصيل يُحدد بعد تأكيد المنطقة.</p><button class="button button-dark full-button" id="checkout-button" type="button">إتمام الطلب <span>←</span></button></div>
+  </aside>
+
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+    <div class="panel-heading"><div><p class="eyebrow">خطوة أخيرة</p><h2 id="checkout-title">بيانات التوصيل</h2></div><button class="icon-button" id="close-checkout" type="button" aria-label="إغلاق">×</button></div>
+    <form id="checkout-form">
+      <label>الاسم بالكامل<input name="name" autocomplete="name" required placeholder="اسمك"></label>
+      <label>رقم الموبايل<input name="phone" type="tel" autocomplete="tel" required placeholder="01xxxxxxxxx"></label>
+      <label>المنطقة والعنوان<input name="address" autocomplete="street-address" required placeholder="الحي، الشارع، وأقرب علامة"></label>
+      <label>طريقة إتمام الطلب<select name="payment" required><option value="whatsapp">تأكيد الطلب عبر واتساب (والدفع عند الاستلام)</option><option value="online">الدفع الإلكتروني بالبطاقة أو المحفظة</option></select></label>
+      <p class="checkout-hint" id="checkout-hint">سيُرسل طلبك إلى واتساب لتأكيد التوفر ورسوم التوصيل. لا يتم خصم أي مبلغ الآن.</p>
+      <button class="button button-dark full-button" type="submit" id="place-order">تأكيد الطلب <span>←</span></button>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
